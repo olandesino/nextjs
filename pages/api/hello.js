@@ -2,5 +2,7 @@
 
 export default function handler(req, res) {
    console.log('request ', JSON.stringify(req.body))
-   res.status(200).json({ name: 'what Doe' })
+   JSON.stringify(req.body)
+   res.status(200).json(req.body)
+//    res.status(200).json({ name: 'what Doe' })
 }
